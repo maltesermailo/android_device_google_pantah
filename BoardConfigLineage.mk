@@ -15,11 +15,11 @@ TARGET_KERNEL_CONFIG := pantah_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/pantah/panther
 TARGET_KERNEL_EXT_MODULE_ROOT := private/google-modules
 TARGET_KERNEL_EXT_MODULES := \
+    amplifiers/snd_soc_wm_adsp \
     amplifiers/audiometrics \
     amplifiers/cs35l41 \
     amplifiers/cs35l45 \
     amplifiers/cs40l26 \
-    amplifiers/snd_soc_wm_adsp \
     aoc \
     bluetooth/broadcom \
     bluetooth/qcom \
