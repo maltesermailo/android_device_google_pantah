@@ -15,33 +15,40 @@ TARGET_KERNEL_CONFIG := pantah_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/pantah/panther
 TARGET_KERNEL_EXT_MODULE_ROOT := private/google-modules
 TARGET_KERNEL_EXT_MODULES := \
-    amplifiers/snd_soc_wm_adsp \
+    trusty \
+    bms/misc \
+    soc/gs \
+    bms \
+    power/mitigation \
+    power/reset \
     amplifiers/audiometrics \
+    amplifiers/snd_soc_wm_adsp \
     amplifiers/cs35l41 \
     amplifiers/cs35l45 \
     amplifiers/cs40l26 \
     aoc \
-    bluetooth/broadcom \
-    bluetooth/qcom \
-    bms \
+    display/common/gs_drm \
     display/samsung \
-    edgetpu/janeiro \
-    fingerprint/fpc \
-    gpu/mali_kbase \
-    gpu/mali_pixel \
-    gxp/gs201 \
+    display/common/gs_panel \
     hdcp/samsung \
-    lwis \
-    misc/sscoredump \
-    nfc \
-    power/mitigation \
-    power/reset \
-    sensors/hall_sensor \
-    soc/gs \
     touch/common \
     touch/goodix \
     touch/sec \
-    trusty \
+    aoc/alsa \
+    bluetooth/broadcom \
+    bluetooth/qcom \
+    edgetpu/janeiro \
+    fingerprint/fpc \
+    gpu/mali_pixel \
+    gpu/mali_kbase \
+    gxp/gs201 \
+    lwis \
+    misc/sscoredump \
+    nfc \
+    sensors/hall_sensor \
     video/gchips \
     wlan/bcm4389 \
     wlan/wlan_ptracker
+
+TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernels/6.1/25Q1-13202328/kernel-headers
+TARGET_PREBUILT_KERNEL_HEADERS := device/google/pantah-kernels/6.1/25Q1-13202328/kernel-uapi-headers.tar.gz
